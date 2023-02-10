@@ -4,21 +4,32 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Give You Glory", cursive;
+  font-family: arial;
   background: #222;
   color: whitesmoke;
 }
 
 h1 {
-  font-family: arial;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
-  margin: 25px;
-  padding: 50px;
+  padding: 30px;
   background-color: #141414;
   color: #ffffff;
-  overflow: hidden;
 }
+
+.images img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.02);
+  transition: 0.4s ease;
+}
+
+.images img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -27,35 +38,116 @@ h1 {
   margin: 3rem auto;
 }
 
-.text {
-  order: -1;
-  flex-basis: 24rem;
-  font-size: 3rem;
-  text-align: center;
-  line-height: 3rem;
-  padding-right: 5rem;
-}
-
 .images {
   position: relative;
   flex-basis: 64rem;
 }
 
-.images img {
-  position: relative;
-  width: 18.75rem;
-  height: 12.5rem;
-  padding: 5px;
-  filter: grayscale(100%);
-  opacity: 0.5;
+.footer {
+  margin-top: 90px;
+  text-align: center;
+  justify-content: center;
+  background-color: #141414;
+  padding: 10px;
+  display: flex;
+}
+
+.desc {
+  display: inline;
+}
+
+.textdesc {
+  padding: 10px;
+  color: rgb(185, 185, 185);
+}
+
+nav {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 10px;
+  list-style-type: none;
+  justify-content: center;
+
+}
+
+li {
+  font-size: x-large;
+  padding: 10px 20px;
+}
+
+:hover.navtext {
+  transform: scale(1.2);
+  color: rgb(109, 109, 109);
   transition: 0.4s ease;
 }
 
-.images img:hover {
+@media (min-width: 1000px) {
+  .images img {
+    position: relative;
+    width: 18.75rem;
+    height: 12.5rem;
+    padding: 10px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.4s ease;
+  }
+
+  .textdesc {
+    padding: 0px 10px;
+    color: rgb(185, 185, 185);
+  }
+
+  .desc {
+    display: flex;
+  }
+
+}
+
+#form_div {
+  padding: 0px 400px;
+}
+
+#form {
+  width: 150px;
+  margin: 0px auto;
+}
+
+.field {
+  width: 200px;
+  padding: 2px;
+  border: none;
+  outline: none;
+  background: none;
+  color: rgb(213, 213, 213);
+  font-style: italic;
+  border-bottom: 2px solid rgb(136, 129, 127);
+  margin-bottom: 8px;
+}
+
+#message {
+  resize: none;
+  height: 70px;
+  overflow-y: hidden;
+}
+
+#submit {
+  padding: 8px;
+  width: 100px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 17px;
   cursor: pointer;
-  filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.02);
-  transition: 0.4s ease;
+  float: right;
+  margin-right: 20px;
+  transition: opacity 0.5s;
 }
 
+#submit:hover {
+  opacity: 0.7;
+}
+
+.msgflex {
+  display: flex;
+}
