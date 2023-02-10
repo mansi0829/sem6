@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Image gallery</title>
     <meta charseth="UTF-8" />
     <meta lang="en" />
     <meta name="viewport" content="width:device-width, initial-scale:1.0" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
-    <h1>Image Gallery</h1>
+<body>
+
+    <h1>
+        <nav class="navfix">
+            <li class="navtext">Home</li>
+            <li class="navtext">About Us</li>
+            <li class="navtext">Contact</li>
+        </nav>
+        <hr>
+        <b>Image Gallery</b>
+    </h1>
     <div class="wrapper">
-      <div class="images">
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" />
-      </div>
+        <div class="images">
+            <div class="desc"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" />
+                <p class="textdesc">
+                    Slowly the sun was disappearing beneath the waves as last rays were visible and leaving its only
+                    hints in reddish sky. The sea was getting more active and violent. It looked like that the storm
+                    would occur, and I thought what would I do if it would really happen. I was scared and did not want
+                    to spend the night on the beach freezing and being frightened by the sea storm. I started to cry
+                    like a child that got lost. Then suddenly I felt that somebody put his or her hand on my shoulder.
+                    My body winced and I was scared to turn around. But I did and I saw my friend standing behind me.
+                    She started to cry and explain to me why she was so late. I didn?t feel any anger at her any more
+                    because for an unknown reason it was all gone when I saw her. We watched the end of the sunset,
+                    jumped into the car and left. While we were driving I looked back to that beach, the sea and the
+                    last rays of the sun as if I was saying good bye to a friend .</p>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_960_720.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_960_720.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_960_720.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" />
+        </div>
     </div>
-  </body>
+    <!-- footer -->
+    <div class="footer">
+        <!-- <div>Copyrights reserved @2023</div> -->
+        <div id="form_div">
+            <div id="form">
+                <input type="text" class="field" placeholder="Name" /><br>
+                <input type="email" class="field" placeholder="E-mail" />
+                <textarea id="message" class="field" placeholder="Message"></textarea>
+                <input id="submit" type="submit" value="Send">
+            </div>
+        </div>
+        <div>
+            <div class="responsive-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
