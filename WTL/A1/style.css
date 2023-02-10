@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Give You Glory", cursive;
+  background: #222;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: arial;
+  font-size: 3em;
+  text-align: center;
+  margin: 25px;
+  padding: 50px;
+  background-color: #141414;
+  color: #ffffff;
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.text {
+  order: -1;
+  flex-basis: 24rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  padding-right: 5rem;
+}
+
+.images {
+  position: relative;
+  flex-basis: 64rem;
+}
+
+.images img {
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  padding: 5px;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
+.images img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.02);
+  transition: 0.4s ease;
+}
+
