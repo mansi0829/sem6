@@ -36,6 +36,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 3rem auto;
+  padding: auto;
 }
 
 .images {
@@ -48,10 +49,12 @@ h1 {
   text-align: center;
   justify-content: center;
   background-color: #141414;
-  padding: 10px;
-  display: flex;
+  padding: 15px;
 }
-
+.responsive-map {
+  text-align: center;
+  justify-content: center;
+}
 .desc {
   display: inline;
 }
@@ -67,11 +70,9 @@ nav {
   padding-bottom: 10px;
   list-style-type: none;
   justify-content: center;
-
 }
 
 li {
-  font-size: x-large;
   padding: 10px 20px;
 }
 
@@ -100,7 +101,14 @@ li {
   .desc {
     display: flex;
   }
-
+  .footer {
+    margin-top: 90px;
+    text-align: center;
+    justify-content: center;
+    background-color: #141414;
+    padding: 10px;
+    display: flex;
+  }
 }
 
 #form_div {
@@ -131,7 +139,7 @@ li {
 }
 
 #submit {
-  padding: 8px;
+  padding: 8px 3px;
   width: 100px;
   border: none;
   background-color: rgb(255, 255, 255);
@@ -150,4 +158,16 @@ li {
 
 .msgflex {
   display: flex;
+}
+.responsive-map {
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.map {
+  filter: grayscale(100%);
+}
+:hover.map {
+  filter: grayscale(10%);
 }
